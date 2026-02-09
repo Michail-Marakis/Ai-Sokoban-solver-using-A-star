@@ -49,6 +49,25 @@ Contains the entire codebase except the Node class.
 *Node.java:*
 Contains the Node class, which represents each game state.
 
+### Example: Sokoban Hard Level Solution (A*)
+
+The following images illustrate the execution of the **A\*** search algorithm on a **hard Sokoban level**.
+
+- **Step 0** shows the initial state of the puzzle.
+  - The heuristic value is `h = 10`
+  - The total cost is `f = 10`
+  - The player, boxes, walls, and targets are represented using the predefined symbol mapping.
+
+- **Step 389** shows the final (goal) state.
+  - All boxes have been successfully placed on distinct targets (1–1 correspondence).
+  - The heuristic value has reached `h = 0`
+  - The total path cost is `f = 389`
+
+This example demonstrates:
+- The effectiveness of the A\* algorithm on complex Sokoban configurations
+- The gradual reduction of the heuristic value until the goal state is reached
+- The use of deadlock detection to avoid invalid or unsolvable states
+
 
 ![alt text](step0-HardLevel.png)
 ![alt text](step389-HardLevel.png)
