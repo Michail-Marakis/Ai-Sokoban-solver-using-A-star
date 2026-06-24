@@ -72,8 +72,8 @@ where:
 
 The final heuristic value is therefore:
 
-h(n) = Σ min(ManhattanDistance(Boxᵢ, Goalⱼ))
-       + IDS(Player, NearestBox)
+**h(n) = Σ min(ManhattanDistance(Boxᵢ, Goalⱼ))
+       + IDS(Player, NearestBox)**
 
 This heuristic combines box-to-goal proximity with player accessibility, providing a more informed estimate of the remaining effort required to solve the puzzle.
 
